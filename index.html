@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body class="has-background-success-light">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="pingpongpic.jpg" alt="Pingpong">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Score Keeper
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="container">
+                                    <div class="columns">
+                                        <div class="column is-half">
+                                            <label for="p1NameInput"> Enter Player 1 Name</label>
+                                            <input class="input is-rounded is-primary" type="text"
+                                                placeholder="Player 1 Name" id="p1NameInput">
+                                        </div>
+                                        <div class="column is-half">
+                                            <label for="p2NameInput"> Enter Player 2 Name</label>
+                                            <input class="input is-rounded is-info" type="text"
+                                                placeholder="Player 2 Name" id="p2NameInput">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h2>
+                                <p class="subtitle">Use the buttons below to keep score</p>
+                                <label for="maxScore" class="label is-large is-inline">Playing to</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="maxScore">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="is-primary button card-footer-item" id="p1Button">+1 to&nbsp;<span
+                                id="p1Name">Player
+                                One</span></button>
+                        <button class="is-info button card-footer-item" id="p2Button">+1 to&nbsp;<span
+                                id="p2Name">Player
+                                Two</span></button>
+                        <button class="is-danger button card-footer-item" id="reset">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
